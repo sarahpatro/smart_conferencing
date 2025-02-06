@@ -1,0 +1,40 @@
+/* App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #f8f9fa;
+}
+
+.main-content {
+  flex: 1;
+  padding: 2rem 0;
+}
+
+/* Animation for page transitions */
+.page-enter {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.page-enter-active {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 300ms ease-out;
+}
+
+/* Loading spinner for async operations */
+.loading-spinner {
+  animation: spin 1s linear infinite;
+  width: 24px;
+  height: 24px;
+  border: 3px solid #1a73e8;
+  border-top-color: transparent;
+  border-radius: 50%;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
