@@ -1,0 +1,59 @@
+.qa-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2rem;
+}
+
+.search-bar {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+}
+
+.search-bar input {
+  flex: 1;
+  padding: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+}
+
+.search-bar button {
+  background: #1a73e8;
+  color: white;
+  border: none;
+  padding: 0 2rem;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.qa-item {
+  background: white;
+  border-radius: 8px;
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.qa-item.active {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.question {
+  padding: 1.5rem;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.answer {
+  padding: 1.5rem;
+  border-top: 1px solid #eee;
+  background: #f8f9fa;
+  border-radius: 0 0 8px 8px;
+}
+
+.q-icon,
+.a-icon {
+  font-size: 1.2rem;
+}
